@@ -1,0 +1,12 @@
+{
+  "server_url" : "http://127.0.0.1:8000/",
+  "prep_accept_sta": 1,
+  "accept_sta": 2,
+  "decide_accept_sta": 3,
+  "face_censor_plan_sta": 4,
+  "face_censor_sta": 5,
+  "audit_censor_sta": 6,
+  "decide_censor_sta": 7,
+  "check_accept_sta": 8,
+  "check_censor_sta": 9
+}

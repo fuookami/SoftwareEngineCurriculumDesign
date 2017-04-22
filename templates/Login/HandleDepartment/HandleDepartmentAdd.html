@@ -1,0 +1,67 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="initial-scale = 1.0, maximum-scale = 1.0">
+    <link rel="stylesheet" href="../../css/boilerplate.css">
+    <link rel="stylesheet" href="../../css/Public/public_style.css">
+    <link rel="stylesheet" href="../../css/Public/info_boxes.css">
+    <link rel="stylesheet" href="../../css/HandleDepartment/HandleDepartment.css">
+    <script src="../../js/Public/jquery-3.1.0.min.js" type="text/javascript"></script>
+    <script src="../../js/Public/jquery.cookie.js" type="text/javascript"></script>
+    <script src="../../js/Public/public_function.js" type="text/javascript"></script>
+    <script src="../../js/Public/select_float_box.js" type="text/javascript"></script>
+    <script src="../../js/HandleDepartment/HandlerDepartmentAdd.js" type="text/javascript"></script>
+</head>
+<body>
+    <div id="headerBox">
+        <header class="clearfix hContainer box" role="banner">
+            <nav role="navigation">
+                <ul class="nav-main">
+                    <li><a href="../HandleAuthority/HandleAuthorityIndex.html">权限等级管理</a></li>
+                    <li><a href="" class="CurrPage">部门管理</a></li>
+                    <li><a href="../HandleUser/HandleUserIndex.html">用户管理</a></li>
+                    <li><a href="../HandleProcess/HandleProcessIndex.html">业务流程管理</a></li>
+                    <li><a href="../HandleBusiness/HandleBusinessIndex.html">业务管理</a></li>
+                </ul>
+            </nav>
+            <br/>
+            <nav role="navigation">
+                <ul class="nav-main">
+                    <li><a href="" class="CurrPage">添加部门</a></li>
+                    <li><a href="HandleDepartmentModify.html">修改部门</a></li>
+                </ul>
+            </nav>
+        </header>
+    </div>
+
+    <div class="clearfix Container box">
+        <div id="DepartmentInfoBoxes" class="clearfix box PartBox">
+                <span class="clearfix">
+                    <div class="BoxTitleBox"><b>部门信息</b></div>
+                </span>
+
+            <table class="form"><tbody>
+            <tr class="inputbox">
+                <td><p class="min-indent">部门名字：</p></td>
+                <td><input type="text" class="LabelInput" id="DepartmentName"></td>
+            </tr>
+            <tr class="inputbox">
+                <td><p class="min-indent FloatBoxesTitle">可处理的业务：</p></td>
+                <td><div class="FloatBoxes">
+                    <div id="BusinessesFloatBoxes">
+                        <div class="FloatBoxAddBtn">+ 添加</div>
+                    </div>
+                </div>
+                </td>
+            </tr>
+            </tbody></table>
+        </div>
+
+        <div class="SubmitBtnBox">
+            <input type="button" class="SubmitBtn" id="Clear" value="清空" />
+            <input type="button" class="SubmitBtn" id="Upload" value="提交" />
+        </div>
+    </div>
+</body>
+</html>

@@ -1,0 +1,22 @@
+.LabelSelect {
+    position: relative;
+    top: .25em;
+    height: 1.25em;
+}
+
+.LabelSelect option {
+    font-size: .85em;
+}
+
+.AddFormLabelBtn {
+    height: 3em;
+    padding-top: .75em;
+}
+
+#Clear, #Upload {
+    width: 5em;
+}
+
+#Switch {
+    width: 6em;
+}

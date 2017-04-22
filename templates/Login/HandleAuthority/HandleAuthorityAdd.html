@@ -1,0 +1,66 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <link rel="stylesheet" href="../../css/boilerplate.css">
+    <link rel="stylesheet" href="../../css/Public/public_style.css">
+    <link rel="stylesheet" href="../../css/HandleAuthority/HandleAuthority.css">
+    <script src="../../js/Public/jquery-3.1.0.min.js" type="text/javascript"></script>
+    <script src="../../js/Public/jquery.cookie.js" type="text/javascript"></script>
+    <script src="../../js/Public/public_function.js" type="text/javascript"></script>
+    <script src="../../js/Public/select_float_box.js" type="text/javascript"></script>
+    <script src="../../js/HandleAuthority/HandleAuthorityAdd.js" type="text/javascript"></script>
+</head>
+<body>
+    <div id="headerBox">
+        <header class="clearfix hContainer box" role="banner">
+            <nav role="navigation">
+                <ul class="nav-main">
+                    <li><a href="" class="CurrPage">权限等级管理</a></li>
+                    <li><a href="../HandleDepartment/HandleDepartmentIndex.html">部门管理</a></li>
+                    <li><a href="../HandleUser/HandleUserIndex.html">用户管理</a></li>
+                    <li><a href="../HandleProcess/HandleProcessIndex.html">业务流程管理</a></li>
+                    <li><a href="../HandleBusiness/HandleBusinessIndex.html">业务管理</a></li>
+                </ul>
+            </nav>
+            <br/>
+            <nav role="navigation">
+                <ul class="nav-main">
+                    <li><a href="" class="CurrPage">添加权限等级</a></li>
+                    <li><a href="HandleAuthorityModify.html">修改权限等级</a></li>
+                </ul>
+            </nav>
+        </header>
+    </div>
+
+    <div class="clearfix Container box">
+        <div id="AuthorityInfoBoxes" class="clearfix box PartBox">
+            <span class="clearfix">
+                <div class="BoxTitleBox"><b>权限等级信息</b></div>
+            </span>
+
+            <table class="form"><tbody>
+            <tr class="inputbox">
+                <td><p class="min-indent">职务名字：</p></td>
+                <td><input type="text" class="LabelInput" id="AuthorityName"></td>
+            </tr>
+            <tr class="inputbox">
+                <td><p class="min-indent FloatBoxesTitle">可处理的业务流程：</p></td>
+                <td><div class="FloatBoxes">
+                    <div id="ProcessesFloatBoxes">
+                        <div class="FloatBoxAddBtn">+ 添加</div>
+                    </div>
+                </div>
+                </td>
+            </tr>
+            </tbody></table>
+        </div>
+
+        <div class="SubmitBtnBox">
+            <input type="button" class="SubmitBtn" id="Clear" value="清空" />
+            <input type="button" class="SubmitBtn" id="Upload" value="提交" />
+        </div>
+    </div>
+
+</body>
+</html>

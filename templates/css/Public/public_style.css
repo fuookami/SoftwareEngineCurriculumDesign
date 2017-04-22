@@ -1,0 +1,300 @@
+@charset "utf-8";
+
+body {
+    font-size: 16px;
+    font-family: "微软雅黑Light";
+    text-align: left;
+    line-height: 1.5em;
+}
+
+.Container {
+    width: 62.25em;
+    margin-top: 1em;
+    border: 1px outset rgba(220, 220, 220, 0.8);
+    border-radius: 5px 5px 5px 5px;
+}
+
+.box {
+    margin-left: auto;
+    margin-right: auto;
+    padding: .5em .5em .5em .5em;
+}
+
+#headerBox {
+    min-width: 60em;
+    width: 100%;
+}
+
+.hContainer{
+    width: 60em;
+}
+
+.nav-main {
+    float: right;
+}
+
+.nav-main li {
+    padding: 0 0 0 .5em;
+    display: inline-block;
+    border-left: 1px solid rgba(220, 220, 220, 0.9);
+}
+
+.nav-main li:first-child {
+    border-left: 0;
+}
+
+.nav-main li:last-child {
+    padding-right: 0;
+}
+
+.nav-main li a[class="CurrPage"] {
+    color: rgb(171, 96, 95);
+}
+
+.nav-main li a[class="CurrPage"]:hover {
+    cursor: default;
+}
+
+.PartBox {
+    width: 61.125em;
+    border: 1px solid rgb(0, 0, 0);
+    border-radius: 5px;
+    margin-top: 1em;
+    margin-bottom: 1em;
+}
+
+.PartBox .PartBox {
+    width: 100%;
+}
+
+.SelectBox {
+    width: auto;
+    float: right;
+}
+
+.SelectBox select {
+    width: 25em;
+}
+
+.BoxTitleBox {
+    width: 100%;
+    height: auto;
+    font-size: 2em;
+    padding-bottom: .5em;
+    margin-top: .5em;
+    margin-bottom: .25em;
+    border-bottom: 1px solid rgb(0, 0, 0);
+}
+
+.BoxTitleBox:hover {
+    cursor: pointer;
+    color: dodgerblue;
+}
+
+.SubBoxTitle {
+    float: right;
+    font-size: .5em;
+    line-height: 1em;
+}
+
+.PartBox .PartBox .BoxTitleBox {
+    font-size: 1.5em;
+}
+
+.InputBox {
+    margin-top: 1.5em;
+    margin-bottom: 1.5em;
+    width: 100%;
+}
+
+.InputBox:first-child {
+    margin-top: .375em;
+}
+
+.InputBox:last-child {
+    margin-bottom: .375em;
+}
+
+.LabelText, .LabelText * {
+    display: inline-block;
+    vertical-align: middle;
+}
+
+.LabelInput {
+    display: inline-block;
+    cursor: text;
+    text-indent: 0.4em;
+}
+
+.LabelText, .LabelCheckBox, .LabelRadio {
+    margin-right: .25em;
+}
+
+.LabelNumInput {
+    width: 3em;
+    text-indent: .5em;
+}
+
+.LabelText img, .LabelImage {
+    width: .75em;
+    height: .75em;
+    vertical-align: middle;
+    margin-right: .25em;
+}
+
+.LabelSelect {
+    display: inline-block;
+}
+
+.SubmitBtnBox {
+    float: right;
+}
+
+.SubmitBtn {
+    margin: .5em 0 .5em .5em;
+    display: inline-block;
+}
+
+table[class*='form'] {
+    width: 100%;
+}
+
+table[class*='form'] td {
+    padding-top: .5em;
+    line-height: 1.5em;
+}
+
+table[class*='form'] tbody tr:first-child td {
+    padding-top: 0;
+}
+
+table[class*='form'] tbody tr td:first-child {
+    width: 12em;
+    text-align: right;
+}
+
+.FloatBoxesTitle {
+    padding-top: .32em;
+}
+
+.FloatBoxes {
+    display: inline-block;
+    vertical-align: text-top;
+    position: relative;
+    top: -.25em;
+    font-size: .7em;
+}
+
+.FloatBoxes div {
+    display: inline-block;
+}
+
+.FloatBox {
+    border-radius: 3px;
+    border: 1px solid rgb(0, 0, 0);
+    padding: .15em .25em .15em .1em;
+    margin-right: 1em;
+}
+
+.FloatBoxDelBtn {
+    position: relative;
+    top: -.125em;
+    margin-left: .5em;
+    cursor: pointer;
+    width: .75em;
+    height: .75em;
+}
+
+.FloatBoxAddBtn {
+    padding: .25em .5em .25em .5em;
+    text-align: center;
+    margin-right: 1em;
+    border-radius: 3px;
+    border: 1px dashed rgb(0, 0, 0);
+    display: inline-block;
+    cursor: pointer;
+}
+
+.FloatBoxAddBtn:hover {
+    color: rgb(0, 0, 255);
+    border-color: rgb(0, 0, 255);
+}
+
+.InfoInputBoxDelBtn {
+    position: relative;
+    top: .7em;
+    float: right;
+    cursor: pointer;
+    width: .75em;
+    height: .75em;
+}
+
+.InfoBox {
+    margin-top: 1em;
+    margin-bottom: 1em;
+    width: 100%;
+    border-radius: 3px;
+    border: 1px solid rgb(0, 0, 0);
+}
+
+.InfoBox .LabelInput {
+    width: 25em;
+}
+
+.InfoBox .LabelText {
+    margin-top: .25em;
+    margin-bottom: .25em;
+}
+
+.AddBoxBtn {
+    cursor: pointer;
+    width: 100%;
+    text-align: center;
+    margin-bottom: .5em;
+    border-radius: 3px;
+    border: 1px dashed rgb(0, 0, 0);
+    margin-top: 1em;
+}
+
+.AddBoxBtn:hover {
+    color: rgb(0, 0, 255);
+    border-color: rgb(0, 0, 255);
+}
+
+.indent {
+    text-indent: 2em;
+}
+
+.min-indent {
+    text-indent: 1em;
+}
+
+.min-indent[class*="LeftMost"] {
+    text-indent: .5em;
+}
+
+.LeftMost::before {
+    content: "";
+    margin-right: .5em;
+    border-left: 2px solid rgb(150, 150, 150);
+}
+
+.RightMost::after {
+    content: "";
+    margin-left: .5em;
+    border-right: 2px solid rgb(150, 150, 150);
+}
+
+.Dashed[class*="RightMost"] {
+    border-right-style: dashed;
+}
+
+.Dashed[class*="LeftMost"] {
+    border-left-style: dashed;
+}
+
+textarea {
+    width: 97%;
+    margin-left: 1.5%;
+    margin-right: 1.5%;
+}

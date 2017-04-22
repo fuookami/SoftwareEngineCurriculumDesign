@@ -1,0 +1,98 @@
+@charset "utf-8";
+
+.ApplicationInfoBox .InfoBox {
+    width: 466px;
+    height: 12em;
+}
+
+.CensorInfoBox .InfoBox {
+    width: 466px;
+    height: 10em;
+}
+
+.InfoBox {
+    display: inline-block;
+    border: 1px solid rgb(0, 0, 0);
+    overflow-x: hidden;
+    overflow-y: hidden;
+}
+
+.InfoBox:nth-child(2n+1) {
+    margin-right: 10px;
+}
+
+.InfoBox p {
+    font-size: .85em;
+    text-indent: 1.5em;
+    margin-top: .25em;
+    margin-bottom: .25em;
+}
+
+.InfoBox p:first-child {
+    text-indent: 0;
+}
+
+.InfoBox:hover {
+    cursor: pointer;
+    color: rgb(0, 0, 255);
+}
+
+.InfoBox.CurrDetail {
+    color: rgb(255, 0, 0);
+}
+
+.InfoBox.CurrDetail:hover {
+    cursor: default;
+    color: rgb(255, 0, 0);
+}
+
+.PageTurnBox {
+    font-size: 0;
+    cursor: default;
+    text-align: center;
+}
+
+.PageTurnBox div {
+    width: 10px;
+    height: 10px;
+    border-radius: 5px;
+    border: 1px solid black;
+    display: inline-block;
+    margin-left: 2px;
+    margin-right: 2px;
+}
+
+.PageTurnBox div:hover {
+    cursor: pointer;
+    background-color: #b26162;
+}
+
+.PageTurnBox div[class*="CurrPage"] {
+    background-color: #a14b4c;
+}
+
+.PageTurnBox div[class*="CurrPage"]:hover {
+    cursor: default;
+    background-color: #a14b4c;
+}
+
+.PageTurnBox img[class*="RightArrow"] {
+    transform: scaleX(-1);
+}
+
+.PageTurnBox img {
+    position: relative;
+    top: -5px;
+    width: 12px;
+    height: 12px;
+    margin-left: 6px;
+    margin-right: 6px;
+}
+
+.PageTurnBox img:hover {
+    cursor: pointer;
+}
+
+.PageTurnBox img[disabled]:hover{
+    cursor: default;
+}
